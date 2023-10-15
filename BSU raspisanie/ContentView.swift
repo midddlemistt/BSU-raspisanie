@@ -5,7 +5,7 @@
 //  Created by 123 on 26.09.23.
 import SwiftUI
 import Foundation
-// Модель данных для расписания пар
+
 struct Schedule: Identifiable {
     var id: Int
     var courseId: Int
@@ -15,13 +15,13 @@ struct Schedule: Identifiable {
     var subject: String
     var teacher: String
 }
-// Модель данных для курса
+
 struct Course: Identifiable, Hashable {
     var id: Int
     var name: String
 }
 
-// Модель данных для группы
+
 struct Group: Identifiable, Hashable {
     var id: Int
     var name: String
@@ -67,7 +67,7 @@ struct CourseGroupSelectionView: View {
         Course(id: 2, name: "2"),
         Course(id: 3, name: "3"),
         Course(id: 4, name: "4"),
-        // Добавьте больше курсов по мере необходимости
+  
     ]
     
     let groups: [Group] = [
@@ -76,7 +76,7 @@ struct CourseGroupSelectionView: View {
         Group(id: 3, name: "3"),
         Group(id: 4, name: "4"),
         Group(id: 5, name: "5"),
-        // Добавьте больше групп по мере необходимости
+
     ]
     
     var body: some View {
@@ -167,7 +167,6 @@ struct WelcomeView: View {
             )
             .onTapGesture {
                 if !hasTappedScreen {
-                    // Пользователь первый раз коснулся экрана, переходим на экран выбора курса и группы
                     isScheduleViewActive = true
                     hasTappedScreen = true
                 }
