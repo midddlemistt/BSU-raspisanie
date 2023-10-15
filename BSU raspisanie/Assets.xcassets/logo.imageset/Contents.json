@@ -3,8 +3,15 @@
     {
       "filename" : "imgonline-com-ua-Resize-FtuJy0YFqw7nnv8.jpeg",
       "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

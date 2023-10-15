@@ -11,7 +11,7 @@ import SwiftUI
 struct BSU_raspisanieApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
